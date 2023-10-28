@@ -4,12 +4,17 @@ import React from "react";
 const Home = () => {
   return (
     <div>
-      Home
-      <ul>
-        <li>
-          <Link href="/about">About</Link>
-        </li>
-      </ul>
+      <main>
+        <div className="left-clm">
+          <div className="left-container">
+            <h1>Welcome to Robert's!</h1>
+            <p>
+              Here you can find out more information about me, including my
+              repositories
+            </p>
+          </div>
+        </div>
+      </main>
     </div>
   );
 };
