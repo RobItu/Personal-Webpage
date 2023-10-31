@@ -23,7 +23,6 @@ const Home = () => {
           </div>
         </div>
         <div className="right-container">
-          <h1>hewo?</h1>
           <Carousel />
         </div>
       </main>

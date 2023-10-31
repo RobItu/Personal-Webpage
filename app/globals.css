@@ -20,8 +20,6 @@ nav ul li a {
   text-decoration: none;
   text-transform: uppercase;
   font-size: 1.3rem;
-  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif,
-    "Arial Narrow", Arial, sans-serif;
 }
 
 .logo {
@@ -41,7 +39,6 @@ main {
   justify-content: space-between;
   margin: 0 auto;
   align-items: center;
-  font-family: cursive;
 }
 
 .wrapper {
@@ -55,7 +52,6 @@ main {
 }
 
 .left-container h1 {
-  font-family: "Playfair Display";
   font-weight: normal;
   font-size: 5.2rem;
   line-height: 1.1em;
@@ -64,6 +60,7 @@ main {
 .left-container p {
   padding-top: 1em;
   font-size: 1.6rem;
+  font-weight: 100;
 }
 
 .home-btns {
@@ -85,4 +82,7 @@ main {
 
 .contacts-btn:hover {
   background-color: #0051bb;
+}
+.right-container {
+  width: 45%;
 }
