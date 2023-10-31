@@ -1,10 +1,16 @@
 import React from "react";
+import Link from "next/link";
 
-const Buttons = ({ text, onClick }) => {
+const Buttons = () => {
   return (
-    <button onClick={onClick} className="left-btn">
-      {text}
-    </button>
+    <div className="home-btns">
+      <Link href="/contact">
+        <button className="contacts-btn">Learn more</button>
+      </Link>
+      <Link href="/repositories">
+        <button className="contacts-btn">Repositories</button>
+      </Link>
+    </div>
   );
 };
 

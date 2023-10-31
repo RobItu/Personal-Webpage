@@ -36,10 +36,6 @@ main {
   margin-left: 4em;
 }
 
-.left-clm {
-  width: 45%;
-}
-
 .nav-container {
   display: flex;
   justify-content: space-between;
@@ -54,6 +50,9 @@ main {
   border: dashed;
   text-align: center;
 }
+.left-container {
+  width: 45%;
+}
 
 .left-container h1 {
   font-family: "Playfair Display";
@@ -65,4 +64,25 @@ main {
 .left-container p {
   padding-top: 1em;
   font-size: 1.6rem;
+}
+
+.home-btns {
+}
+
+.contacts-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 2em;
+  margin-right: 1.2em;
+}
+
+.contacts-btn:hover {
+  background-color: #0051bb;
 }
