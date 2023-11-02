@@ -5,16 +5,18 @@ import "../app/globals.css";
 
 const Navigation = () => {
   return (
-    <div className="nav-container">
-      <Link href="/">
-        <Image
-          src="/images/bob.svg"
-          width={180}
-          height={90}
-          alt="My company logo"
-          className="logo"
-        />{" "}
-      </Link>
+    <header className="nav-container">
+      <div className="logo">
+        <Link href="/">
+          <Image
+            src="/images/bob.svg"
+            width={180}
+            height={90}
+            alt="My company logo"
+            className="logo"
+          />{" "}
+        </Link>
+      </div>
       <nav>
         <ul>
           <li>
@@ -28,7 +30,7 @@ const Navigation = () => {
           </li>
         </ul>
       </nav>
-    </div>
+    </header>
   );
 };
 

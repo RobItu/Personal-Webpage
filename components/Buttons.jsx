@@ -5,10 +5,10 @@ const Buttons = () => {
   return (
     <div className="home-btns">
       <Link href="/contact">
-        <button className="contacts-btn">Learn more</button>
+        <button className="home-btn">Contact Me</button>
       </Link>
       <Link href="/repositories">
-        <button className="contacts-btn">Repositories</button>
+        <button className="home-btn">Repositories</button>
       </Link>
     </div>
   );
