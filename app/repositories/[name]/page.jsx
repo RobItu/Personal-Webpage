@@ -1,12 +1,15 @@
 import React from "react";
+import RepoComponent from "@/components/Repo";
+import Link from "next/link";
 
-const Repo = ({ params: { name } }) => {
+const RepoPage = ({ params: { name } }) => {
   return (
     <div className="card">
-      <h2>{name}</h2>
-      <p>Repo Details</p>
+      <Link href="/repositories">Back to repositories</Link>
+
+      <RepoComponent name={name} />
     </div>
   );
 };
 
-export default Repo;
+export default RepoPage;
