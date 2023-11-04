@@ -41,7 +41,6 @@ main {
   margin: 0 auto;
   align-items: center;
   background-color: rgb(164, 195, 223);
-  padding: 0 rem;
   border-bottom: 5px solid black;
 }
 
@@ -135,6 +134,61 @@ main {
   width: 40px;
   height: 40px;
   animation: spin 1s linear infinite;
+}
+
+.repo-btn {
+  display: inline-block;
+  padding: 10px 20px;
+  border: none;
+  background-color: #0070f3;
+  color: white;
+  border-radius: 5px;
+  text-decoration: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-top: 2em;
+  margin-bottom: 1.2em;
+  padding: 1em;
+}
+
+.card {
+  padding: 1em;
+}
+
+.single-repo-container {
+  justify-content: center;
+  padding: 2rem;
+  background-color: white;
+}
+
+.single-repo-container h2 {
+  justify-content: center;
+  display: flex;
+  font-size: 2em;
+  padding-left: 1rem;
+  font-weight: bold;
+  font-family: cursive;
+  padding-bottom: 1em;
+}
+.single-repo-container h3 {
+  padding-top: 1em;
+  font-size: large;
+  font-family: cursive;
+  font-weight: bold;
+}
+
+.single-repo-container p {
+  padding-left: 1rem;
+  padding-bottom: 1em;
+
+  font-weight: lighter;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.dirs {
+  font-family: "Courier New", Courier, monospace;
+  color: blue;
+  text-decoration: underline;
 }
 
 @keyframes spin {

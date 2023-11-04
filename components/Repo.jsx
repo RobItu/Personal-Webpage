@@ -11,10 +11,10 @@ async function fetchRepo(name) {
 const RepoComponent = async ({ name }) => {
   const repo = await fetchRepo(name);
   return (
-    <>
+    <div>
       <h2>{repo.name}</h2>
       <p>{repo.description}</p>
-      <div className="card-stats">
+      <div className="repo-details">
         <div className="card-stat">
           <FaStar />
           <span>{repo.stargazers_count}</span>
@@ -28,7 +28,7 @@ const RepoComponent = async ({ name }) => {
           <span>{repo.watchers_count}</span>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
