@@ -1,6 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
+import Searchbar from "@/components/Searchbar";
 
 async function fetchRepos() {
   const response = await fetch("https://api.github.com/users/robitu/repos");
@@ -12,6 +13,7 @@ const page = async () => {
   return (
     <div className="repos-container">
       <h2>Repositories</h2>
+      <Searchbar />
       <ul className="repo-list">
         {repos.map((repo) => (
           <li key={repo.id}>

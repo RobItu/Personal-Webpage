@@ -3,6 +3,7 @@ import Carousel from "@/components/Carousel";
 import Buttons from "@/components/Buttons";
 import Link from "next/link";
 import React from "react";
+import Searchbar from "@/components/Searchbar";
 
 const Home = () => {
   const handleClick = () => {
