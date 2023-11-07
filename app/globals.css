@@ -80,8 +80,41 @@ main {
   margin-right: 1.2em;
 }
 
-.contacts-btn:hover {
+.contact-btn:hover {
   background-color: #0051bb;
+  color: rgb(221, 169, 71);
+  transform: translateY(-5px); /* Move the Link 5 pixels up on hover */
+}
+
+.contact-page h2 {
+  justify-content: center;
+  display: flex;
+  padding-top: 20px;
+  font-size: xx-large;
+  padding-bottom: 50px;
+}
+
+.contact-body {
+  display: flex;
+  padding: 20px;
+  justify-content: center;
+  gap: 100px;
+}
+
+.home-btn:hover {
+  background-color: #0051bb;
+}
+
+.contact-card {
+  text-align: center;
+  font-size: larger;
+  align-items: center;
+}
+
+.contact-card img {
+  display: block;
+  margin: 0 auto;
+  padding-bottom: 20px;
 }
 .right-container {
   width: 45%;

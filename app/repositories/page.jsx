@@ -21,6 +21,7 @@ const page = () => {
     }
     fetchRepos();
   }, [query]);
+
   return (
     <div className="repos-container">
       <h2>Repositories</h2>
