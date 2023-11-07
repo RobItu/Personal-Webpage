@@ -2,10 +2,12 @@
 import React from "react";
 import { useState } from "react";
 
-const Searchbar = () => {
+const Searchbar = ({ getSearchResults }) => {
   const [query, setQuery] = useState("");
   const handleSubmit = (e) => {
     e.preventDefault();
+    console.log(query);
+    getSearchResults(query);
   };
   return (
     <form className="search-form" onSubmit={handleSubmit}>

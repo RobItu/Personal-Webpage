@@ -1,40 +1,35 @@
-import React from "react";
-import Link from "next/link";
-import { FaStar, FaCodeBranch, FaEye } from "react-icons/fa";
+"use client";
+import React, { useEffect, useState } from "react";
 import Searchbar from "@/components/Searchbar";
+import Repositories from "@/components/Repositories";
 
-async function fetchRepos() {
-  const response = await fetch("https://api.github.com/users/robitu/repos");
-  return await response.json();
-}
-
-const page = async () => {
-  const repos = await fetchRepos();
+const page = () => {
+  const [query, setQuery] = useState("");
+  const [repos, setRepos] = useState([]);
+  useEffect(() => {
+    async function fetchRepos() {
+      const response = await fetch("https://api.github.com/users/robitu/repos");
+      const data = await response.json();
+      if (query != "") {
+        const filteredData = data.filter((repo) =>
+          repo.name.toLowerCase().includes(query.toLocaleLowerCase())
+        );
+        setRepos(filteredData);
+      } else {
+        setRepos(data);
+      }
+    }
+    fetchRepos();
+  }, [query]);
   return (
     <div className="repos-container">
       <h2>Repositories</h2>
-      <Searchbar />
-      <ul className="repo-list">
-        {repos.map((repo) => (
-          <li key={repo.id}>
-            <Link href={`/repositories/${repo.name}`}>
-              <h3>{repo.name}</h3>
-              <p>{repo.description}</p>
-              <div className="repo-details">
-                <span>
-                  <FaStar /> {repo.stargazers_count}
-                </span>
-                <span>
-                  <FaCodeBranch /> {repo.forks_count}
-                </span>
-                <span>
-                  <FaEye /> {repo.watchers_count}
-                </span>
-              </div>
-            </Link>
-          </li>
-        ))}
-      </ul>
+      <Searchbar
+        getSearchResults={(searchResponse) => {
+          setQuery(searchResponse);
+        }}
+      />
+      <Repositories repos={repos} />
     </div>
   );
 };
