@@ -35,6 +35,39 @@ main {
   padding-top: 1rem;
 }
 
+.about-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center horizontally */
+  justify-content: center; /* Center vertically */
+  text-align: justify; /* Center text within the container */
+  padding-top: 10px;
+  padding-bottom: 100px;
+}
+
+.about-page img {
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adjust the values as needed */
+  border: 2px solid #ccc; /* Customize border color and thickness */
+}
+
+.about-page h1 {
+  font-size: xx-large;
+  padding: 10px;
+}
+
+.about-page p {
+  font-weight: lighter;
+  width: 50%;
+  font-size: large;
+  font-family: cursive;
+}
+
+.tag {
+  padding-top: 10px;
+  text-align: right;
+}
+
 .nav-container {
   display: flex;
   justify-content: space-between;
